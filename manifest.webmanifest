@@ -1,0 +1,9 @@
+{
+  "name": "팀플로그",
+  "short_name": "팀플로그",
+  "description": "팀플 회의 내용과 할 일을 한눈에 정리하는 앱",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f9fc",
+  "theme_color": "#6c8ef5"
+}

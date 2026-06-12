@@ -1,0 +1,16 @@
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null",
+    "users": {
+      "$userId": {
+        ".validate": "newData.hasChildren(['id', 'name', 'passwordHash'])"
+      }
+    },
+    "teams": {
+      "$teamId": {
+        ".validate": "!newData.exists() || newData.hasChildren(['teamId', 'teamName', 'subjectName', 'dueDate', 'inviteCode', 'createdBy', 'members'])"
+      }
+    }
+  }
+}
